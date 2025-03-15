@@ -10,7 +10,6 @@ async function status(request, response) {
     values: [nomeBanco],
   });
 
-  console.log(conexoesAtivas.rows);
   response.status(200).json({
     updated_at: updatedAt,
     dependencies: {
